@@ -6,15 +6,15 @@ class Pet {
     String petType;
     boolean eatsDryFood;
 
-    protected void sayHi() {
+    void sayHi() {
         System.out.println("I don't know.  Don't ask me.");
     }
 
-    protected int getAge() {
+    int getAge() {
         return age;
     }
 
-    protected void describe() {
+    void describe() {
         System.out.println("I'm a pet.");
     }
 

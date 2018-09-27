@@ -2,11 +2,11 @@ package org.sla;
 
 class Cat extends Pet {
 
-    protected void sayHi() {
+    void sayHi() {
         System.out.println("Meow!");
     }
 
-    protected void describe() {
+    void describe() {
         System.out.println("I'm a " + petType + " named " + name + ".");
         System.out.println("I'm " + age + " human years old.");
         if (eatsDryFood) {
