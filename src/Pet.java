@@ -1,10 +1,22 @@
 package org.sla;
 
 class Pet {
-    int age;
-    String name;
-    String petType;
-    boolean eatsDryFood;
+    // Fields
+    private int age;
+    private String name;
+    private String petType;
+    private boolean eatsDryFood;
+
+    // Constructors
+    Pet(int theAge, String theName,
+        String thePetType, boolean eatsWhat) {
+        age = theAge;
+        name = theName;
+        petType = thePetType;
+        eatsDryFood = eatsWhat;
+    }
+
+    // Methods
 
     void sayHi() {
         System.out.println("I don't know.  Don't ask me.");
@@ -12,6 +24,18 @@ class Pet {
 
     int getAge() {
         return age;
+    }
+
+    String getPetType() {
+        return petType;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    boolean getEatsDryFood() {
+        return eatsDryFood;
     }
 
     void describe() {
